@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="school-club-icon">School Club</div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="loginIcon"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hidden Login and Register Forms -->
+    <div id="loginRegisterForms" class="container mt-3" style="display: none;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Login</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label"><i class="fas fa-user"></i> Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login Now</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Register</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="reg-username" class="form-label"><i class="fas fa-user"></i> Username</label>
+                        <input type="text" class="form-control" id="reg-username" placeholder="Choose a username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label"><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reg-password" class="form-label"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" class="form-control" id="reg-password" placeholder="Choose a password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Banner with Image Slider -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/img-1.jpg" class="d-block w-100" alt="Event 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to School Club</h5>
+                <p>Empowering Students through Activities and Initiatives</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Images/img-2.jpg" class="d-block w-100" alt="Event 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to School Club</h5>
+                <p>Empowering Students through Activities and Initiatives</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Images/img-3.jpg" class="d-block w-100" alt="Event 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to School Club</h5>
+                <p>Empowering Students through Activities and Initiatives</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Events Section -->
+<section id="events" class="container mt-5">
+    <h2 class="section-title">Events</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="event-card">
+                <img src="Images/event-1.jpg" alt="Event 1" class="img-fluid event-img">
+                <h5 class="event-title">Precision Toss Challenge</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="event-card">
+                <img src="Images/event-2.avif" alt="Event 2" class="img-fluid event-img">
+                <h5 class="event-title">Strength Showdown</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="event-card">
+                <img src="Images/event-3.jpg" alt="Event 3" class="img-fluid event-img">
+                <h5 class="event-title">Artistry in Motion</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="event-card">
+                <img src="Images/event-4.jpg" alt="Event 4" class="img-fluid event-img">
+                <h5 class="event-title">Quickfire Relay</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="event-card">
+                <img src="Images/event-5.jpg" alt="Event 5" class="img-fluid event-img">
+                <h5 class="event-title">Rhythm Revolution</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Section -->
+    <section id="blog" class="container mt-5">
+        <h2>Blog</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/blog-6.jpg" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Highlights Gallery</h5>
+                        <p class="card-text">Create a dedicated gallery section to showcase photos from recent club events. This could include images from social gatherings, workshops, or competitions. Organize the photos by event, with captions that describe what's happening in each image.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/blog-5.jpg" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Welcome Event Success</h5>
+                        <p class="card-text">Last week, the club hosted its Annual Welcome Event, bringing together new and returning members for a fun evening of icebreakers, games, and a presentation on our upcoming activities.Over 50 members attended, making it our biggest event yet!..</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/blog-3" class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Educational Content</h5>
+                        <p class="card-text"></p>We regularly feature articles from teachers, alumni, and industry experts who share their insights and experiences. These contributions provide valuable perspectives and advice, helping members to deepen their understanding of our club’s activities and goals..</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2>Contact Us</h2>
+        <button class="btn btn-primary" id="contactBtn">Show Contact Details</button>
+        <div id="contactDetails" class="mt-3" style="display: none;">
+            <p>Email: contact@schoolclub.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 School Club Lane, City, Country</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>© 2024 School Club | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
